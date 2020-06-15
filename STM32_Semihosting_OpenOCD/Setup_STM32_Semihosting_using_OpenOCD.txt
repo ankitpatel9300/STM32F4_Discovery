@@ -1,0 +1,27 @@
+   
+   **** Configuration for using printf using OpenOCD and Semihosting
+
+   IDE:- STM32Cube IDE
+
+
+
+
+
+    OpenOCD Debugger and Semi-hosting
+    ======================================
+
+
+    >> project >> Debug Configuration >> new launch conf >> debugger >> change debugger to ST-LINK(Open OCD)
+    >> add below run command in debug>>startup>>run commands
+
+
+    Set the linker arguments
+    >> settings >> MCU GCC Linker >> Miscellaneous >> other flags >> add new below flag
+   -specs=rdimon.specs -lc -lrdimon
+
+    Add semi-hosting run command
+    monitor arm semihosting enable 
+
+    Add the below function call to main.c 
+    extern void initialise_monitor_handles(void);  //function prototype
+    initialise_monitor_handles(void);        // call this function in main before using printf()
