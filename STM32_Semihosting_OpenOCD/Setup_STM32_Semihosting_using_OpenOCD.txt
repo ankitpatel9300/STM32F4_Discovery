@@ -1,5 +1,5 @@
    
-   **** Configuration for using printf using OpenOCD and Semihosting
+   /**** Configuration for using printf using OpenOCD and Semihosting****/
 
    IDE:- STM32Cube IDE
 
