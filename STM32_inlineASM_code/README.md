@@ -21,4 +21,5 @@
 	__asm volatile ("LDR %0,[%1]":"=r"(p1):"r"(p2) ); //p1 = *p2
 ```
 
-
+> "Use disassembly and resister view in debug mode
+> to visualize asm code and resister values"
