@@ -36,3 +36,4 @@ __attribute__((weak)) int _write(int file, char *ptr, int len)
 2. when processor enters handler mode binary value of XPSR will change.
 #### Hit Run
 #### See output in SWV ITM data console.
+:+1:
